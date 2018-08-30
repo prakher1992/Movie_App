@@ -22,14 +22,14 @@
                 <div class="form-group">
                     {{ form.datetime.label(class="form-control-label") }}
                     {% if form.datetime.errors %}
-                        {{ form.datetime(class="form-control form-control-lg is-invalid") }}
+                        {{ form.datetime(class="form-control form-control-lg is-invalid",placeholder="2018-10-02 01:45:00") }}
                         <div class="invalid-feedback">
                             {% for error in form.datetime.errors %}
                                 <span>{{ error }}</span>
                             {% endfor %}
                         </div>
                     {% else %}
-                        {{ form.datetime(class="form-control form-control-lg") }}
+                        {{ form.datetime(class="form-control form-control-lg",placeholder="2018-10-02 01:45:00") }}
                     {% endif %}
 
                 </div>
